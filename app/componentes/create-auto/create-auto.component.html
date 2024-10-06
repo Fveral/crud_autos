@@ -1,0 +1,64 @@
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="card text-center">
+        <div class="car-body">
+          <h3>Registrar Auto</h3>
+          <form action="" class="mt-4" [formGroup]="crearAuto" (ngSubmit)="addAuto()">
+            <div class="row mb-3 mx-2">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="nombre"
+                  placeholder="Nombre"
+                />
+              </div>
+
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="marca"
+                  placeholder="Marca"
+                />
+              </div>
+            </div>
+            <div class="row mb-3 mx-2">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="modelo"
+                  placeholder="Modelo"
+                />
+              </div>
+
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  formControlName="year"
+                  placeholder="Año Fabricante"
+                />
+              </div>
+            </div>
+
+            <input
+              type="text"
+              class="form-control form-control-lg mt-3 mx-auto"
+              formControlName="duenio"
+              style="width: 200px"
+              placeholder="Dueño anterior"
+            />
+
+            <div class="mt-3">
+              <button type="text" class="btn btn-secondary btn-lg mx-1" routerLink="/listar">Volver</button>
+              <button type="text" class="btn btn-dark btn-lg">Agregar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
